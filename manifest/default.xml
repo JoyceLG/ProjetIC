@@ -2,7 +2,7 @@
 <manifest>
   <remote name="github" fetch="https://github.com/JoyceLG"/>
   
-  <default revision="master" remote="github" sync-j="8"/>
+  <default revision="main" remote="github" sync-j="8"/>
 
  <project name="myproject.git" remote="github" path="myproject/test" revision="unstable">
     <copyfile src="README.md" dest="README.md" />
