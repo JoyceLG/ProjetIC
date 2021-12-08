@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <remote name="github" fetch="https://github.com/JoyceLG"/>
-  
-  <default revision="main" remote="github" sync-j="8"/>
 
- <project name="myproject.git" remote="github" path="myproject/test" revision="unstable">
-    <copyfile src="README.md" dest="README.md" />
- </project>
+  <remote fetch="git://git.yoctoproject.org" name="yocto"/>
+
+  <!-- Default use yocto master branch -->
+  <default sync-j="4" revision="master"/>
+
+  <!-- yocto and openembedded -->
+  <project remote="yocto" revision="dunfell" name="poky" path="sources/poky"/>
+
 </manifest>
+
